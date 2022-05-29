@@ -2,6 +2,8 @@ import Continents from "./components/continent";
 import Countries from "./components/countries";
 import { useRoutes, BrowserRouter } from "react-router-dom";
 import "./App.css";
+import { client } from "./ApolloClient/client";
+import { ApolloProvider } from "@apollo/client";
 
 const AddRoute = () => {
   let routes = useRoutes([
@@ -13,11 +15,13 @@ const AddRoute = () => {
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <AddRoute />
-      </BrowserRouter>
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <BrowserRouter>
+          <AddRoute />
+        </BrowserRouter>
+      </div>
+    </ApolloProvider>
   );
 }
 

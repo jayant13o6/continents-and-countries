@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+table, td, th{
+  border: 2px solid #ccc;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+  margin-left: 50px;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td{
+  padding: 10px;
+}
+
+caption{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  padding: 10px;
+}
+
+h1,h2{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
